@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deleteArtist(artistId);
-//                alertDialog.dismiss();
+                alertDialog.dismiss();
             }
         });
     }
