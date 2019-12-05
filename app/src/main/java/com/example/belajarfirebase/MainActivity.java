@@ -150,14 +150,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 deleteArtist(artistId);
-                alertDialog.dismiss();
+//                alertDialog.dismiss();
             }
         });
     }
 
     private void deleteArtist(String artistId) {
         DatabaseReference drArtist = FirebaseDatabase.getInstance().getReference("artists").child(artistId);
-        DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("trackss").child(artistId);
+        DatabaseReference drTracks = FirebaseDatabase.getInstance().getReference("tracks").child(artistId);
 
         drArtist.removeValue();
         drTracks.removeValue();
