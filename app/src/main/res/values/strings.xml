@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BelajarFirebase</string>
+
+    <array name="genres">
+        <item>Rock</item>
+        <item>Pop</item>
+        <item>House</item>
+        <item>Tropical</item>
+    </array>
+
+</resources>
